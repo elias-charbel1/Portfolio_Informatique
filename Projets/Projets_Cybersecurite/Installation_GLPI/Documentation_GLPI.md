@@ -1,19 +1,18 @@
 ## Sommaire
-- [1. Introduction](#1-introduction)
-- [2. Installation et Configuration](#2-installation-et-configuration)
-  - [2.1 Configuration de la machine virtuelle](#21-configuration-de-la-machine-virtuelle)
-  - [2.2 Installation des dépendances](#22-installation-des-dépendances)
-    - [Apache2](#apache2)
-    - [PHP](#php)
-    - [MariaDB](#mariadb)
-  - [2.3 Configuration de MariaDB](#23-configuration-de-mariadb)
-- [3. Installation de GLPI](#3-installation-de-glpi)
-- [4. Configuration via l'interface web](#4-configuration-via-linterface-web)
-- [5. Sécurisation](#5-sécurisation)
-- [6. Conclusion](#6-conclusion)
+1. [Introduction](#introduction)
+2. [Installation et Configuration](#installation-et-configuration)
+   - [2.1 Configuration de la machine virtuelle](#21-configuration-de-la-machine-virtuelle)
+   - [2.2 Installation des dépendances](#22-installation-des-dépendances)
+     - [Apache2](#apache2)
+     - [PHP](#php)
+     - [MariaDB](#mariadb)
+     - [Modules PHP supplémentaires](#modules-php-supplémentaires)
+   - [2.3 Sécurisation et création de la base de données MariaDB](#23-sécurisation-et-création-de-la-base-de-données-mariadb)
+3. [Installation de GLPI](#installation-de-glpi)
+4. [Configuration via l'interface web](#configuration-via-linterface-web)
+5. [Sécurisation](#sécurisation)
+6. [Conclusion](#conclusion)
 
-
-# Installation et Configuration de GLPI sur Debian
 
 ## Introduction
 Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de Parc Informatique) sur une machine virtuelle Debian 11.6 dans le cadre de l'agence Rue25.
@@ -115,8 +114,6 @@ QUIT;
 ---  
 
 3. Installation de GLPI  
-
-3.1 Téléchargement et extraction  
 Téléchargez GLPI depuis le dépôt officiel GitHub.  
 ```bash
 wget https://github.com/glpi-project/glpi/releases/download/10.0.17/glpi-10.0.17.tgz
