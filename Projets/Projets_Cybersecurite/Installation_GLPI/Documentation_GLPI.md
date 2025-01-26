@@ -1,3 +1,10 @@
+# Installation et Configuration de GLPI sur Debian 11.6
+
+## Introduction
+Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de Parc Informatique) sur une machine virtuelle Debian 11.6 dans le cadre de l'agence Rue25.
+
+---
+
 ## Table des Matières
 1. [Objectifs](#objectifs)
 2. [Configuration de la Machine Virtuelle](#1-configuration-de-la-machine-virtuelle)
@@ -16,9 +23,6 @@
 4. [Sécurisation](#3-sécurisation)
 5. [Conclusion](#4-conclusion)
 
-
-## Introduction
-Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de Parc Informatique) sur une machine virtuelle Debian 11.6 dans le cadre de l'agence Rue25.
 
 ### Objectifs
 - Créer une machine virtuelle pour héberger GLPI.
