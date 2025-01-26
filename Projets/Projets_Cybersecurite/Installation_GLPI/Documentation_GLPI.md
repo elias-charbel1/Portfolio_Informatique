@@ -103,7 +103,7 @@ sudo mysql -u root
 ---  
 
 Créez la base de données et configurez les utilisateurs.  
-```bash
+```sql
 CREATE DATABASE glpi;
 CREATE USER 'glpi'@'localhost' IDENTIFIED BY 'glpi';
 GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost' WITH GRANT OPTION;
