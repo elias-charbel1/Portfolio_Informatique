@@ -18,7 +18,7 @@ Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de
       3. [MariaDB](#mariadb)
       4. [Modules PHP supplémentaires](#modules-php-supplémentaires)
    3. [Sécurisation et création de la base de données MariaDB](#23-sécurisation-et-création-de-la-base-de-données-mariadb)
-   4. [Installation de GLPI](#24-installation-de-glpi)
+   4. [Installation de GLPI](#3-installation-de-glpi)
    5. [Configuration via l'interface web](#25-configuration-via-linterface-web)
 4. [Sécurisation](#3-sécurisation)
 5. [Conclusion](#4-conclusion)
