@@ -50,56 +50,111 @@ ssh user@adresseIPmachine
 ```
 
 ### 2.2 Installation des Dépendances
-- Installation des services suivants :
-  - **Apache2**
-  - **PHP**
-  - **MariaDB**
 
-![Image Dépendances Installation](#)
+#### Apache2
+- Installer Apache2, le serveur web utilisé pour héberger GLPI.
+```bash
+sudo apt install apache2 -y
+```
+- Vérifier que le service Apache2 fonctionne correctement.
+```bash
+systemctl status apache2
+```
 
-### 2.3 Configuration de MariaDB
-- Sécurisation de MariaDB.
-- Création de la base de données pour GLPI :
-  - Nom de la base : `glpi`
-  - Utilisateur : `glpi`
-  - Mot de passe : `glpi`
+#### PHP
+- Installer PHP, nécessaire pour exécuter les scripts de GLPI.
+```bash
+sudo apt install php -y
+```
 
-![Image Configuration MariaDB](#)
+- Vérifier que PHP est installé et connaître la version installée.
+```bash
+php -v
+```
+#### MariaDB
+- Installer MariaDB, la base de données utilisée par GLPI.
+```bash
+sudo apt install mariadb-server -y
+```
+- Vérifier que le service MariaDB fonctionne correctement.
+```bash
+systemctl status mariadb
+```
+#### Modules PHP supplémentaires
+- Installer les modules PHP nécessaires pour qu'Apache2 prenne en charge les scripts de GLPI.
+```bash
+sudo apt install php libapache2-mod-php -y
+```
+- Redémarrer Apache2 pour appliquer les modifications.
+```bash
+sudo systemctl restart apache2
+```
+### 2.3 Sécurisation et création de la base de données MariaDB  
+Lancez la configuration sécurisée de MariaDB.  
+```bash
+sudo mysql_secure_installation
+```
+---  
 
----
+Connectez-vous en tant que root dans MariaDB.  
+```bash
+sudo mysql -u root
+```
+---  
 
-## 3. Installation de GLPI
+Créez la base de données et configurez les utilisateurs.  
+```bash
+CREATE DATABASE glpi;
+CREATE USER 'glpi'@'localhost' IDENTIFIED BY 'glpi';
+GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+QUIT;
+```
+---  
 
-### 3.1 Téléchargement et Extraction
-- Téléchargement de la dernière version de GLPI depuis [GitHub](https://github.com/glpi-project/glpi/releases).
-- Déplacement des fichiers vers le répertoire web d'Apache.
+3. Installation de GLPI  
 
-### 3.2 Installation des Modules PHP Nécessaires
-- Installation des modules PHP requis par GLPI.
-- Attribution des permissions nécessaires aux fichiers.
+3.1 Téléchargement et extraction  
+Téléchargez GLPI depuis le dépôt officiel GitHub.  
+```bash
+wget https://github.com/glpi-project/glpi/releases/download/10.0.17/glpi-10.0.17.tgz
+```
+Extrayez les fichiers et déplacez-les vers le répertoire web d’Apache.  
+```bash
+tar -xvzf glpi-10.0.17.tgz
+sudo mv glpi /var/www/html/glpi
+```
+Installez les modules PHP nécessaires pour GLPI.  
+```bash
+cd /var/www/html
+sudo apt install -y php-curl php-gd php-mbstring php-zip php-xml php-ldap php-intl php-mysql php-dom php-simplexml php-json php-phar php-pdo php-cgi
+```
+Donnez les permissions nécessaires aux fichiers GLPI.  
+```bash
+sudo chown -R www-data:www-data /var/www/html/glpi
+sudo chmod -R 755 /var/www/html/glpi
+```
+Redémarrez Apache pour appliquer les modifications.  
+```bash
+systemctl restart apache2
+```
+4. Configuration via l'interface web  
+Accédez à l'interface web en ouvrant l’URL suivante dans votre navigateur :  
+http://adresseIPmachine/glpi  
 
-![Image Installation GLPI](#)
+Configurez la connexion à la base de données :  
+- Serveur : localhost  
+- Utilisateur : glpi  
+- Mot de passe : glpi  
+- Base de données : glpi  
 
----
+Suivez les étapes d'installation guidée dans l'interface web.  
 
-## 4. Configuration via l'Interface Web
-- Accès à l'interface : `http://adresseIPmachine/glpi`.
-- Connexion à la base de données avec les informations suivantes :
-  - Serveur : `localhost`
-  - Utilisateur : `glpi`
-  - Mot de passe : `glpi`
-  - Base de données : `glpi`
-- Suivi des étapes de configuration.
+5. Sécurisation  
+Changez le mot de passe de l'administrateur GLPI pour renforcer la sécurité.  
 
-![Image Interface Web GLPI](#)
+Déplacez les répertoires sensibles (comme les logs et les fichiers de configuration) hors du répertoire web pour éviter qu’ils ne soient accessibles depuis l’extérieur.  
 
----
 
-## 5. Sécurisation
-- Changement du mot de passe administrateur GLPI.
-- Déplacement des répertoires sensibles hors du répertoire web.
-
----
-
-## Conclusion
-GLPI est désormais installé et opérationnel. Pour plus d'informations, consultez la documentation officielle ou le [répertoire GitHub de GLPI](https://github.com/glpi-project/glpi/releases).
+6. Conclusion  
+L’interface GLPI est maintenant installée et opérationnelle. Vous pouvez commencer à l’utiliser pour gérer votre parc informatique. Pour plus de détails, consultez la documentation officielle de GLPI.
