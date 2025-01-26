@@ -11,10 +11,11 @@
      - [MariaDB](#mariadb)
      - [Modules PHP supplémentaires](#modules-php-supplémentaires)
    - [2.3 Sécurisation et création de la base de données MariaDB](#23-sécurisation-et-création-de-la-base-de-données-mariadb)
-4. [Installation de GLPI](#3-installation-de-glpi)
-5. [Configuration via l'interface web](#4-configuration-via-linterface-web)
-6. [Sécurisation](#5-sécurisation)
-7. [Conclusion](#6-conclusion)
+4. [Installation de GLPI](#4-installation-de-glpi)
+   - [Téléchargement et extraction](#téléchargement-et-extraction)
+5. [Configuration via l'interface web](#5-configuration-via-linterface-web)
+6. [Sécurisation](#6-sécurisation)
+7. [Conclusion](#7-conclusion)
 
 
 ## Introduction
