@@ -126,7 +126,7 @@ QUIT;
 ```
 ---  
 
-3. Installation de GLPI  
+### 2.4 Installation de GLPI  
 Téléchargez GLPI depuis le dépôt officiel GitHub.  
 ```bash
 wget https://github.com/glpi-project/glpi/releases/download/10.0.17/glpi-10.0.17.tgz
@@ -150,7 +150,7 @@ Redémarrez Apache pour appliquer les modifications.
 ```bash
 systemctl restart apache2
 ```
-4. Configuration via l'interface web  
+### 2.5 Configuration via l'interface web  
 Accédez à l'interface web en ouvrant l’URL suivante dans votre navigateur :  
 http://adresseIPmachine/glpi  
 
@@ -162,11 +162,11 @@ Configurez la connexion à la base de données :
 
 Suivez les étapes d'installation guidée dans l'interface web.  
 
-5. Sécurisation  
+## 3. Sécurisation  
 Changez le mot de passe de l'administrateur GLPI pour renforcer la sécurité.  
 
 Déplacez les répertoires sensibles (comme les logs et les fichiers de configuration) hors du répertoire web pour éviter qu’ils ne soient accessibles depuis l’extérieur.  
 
 
-6. Conclusion  
+## 4. Conclusion  
 L’interface GLPI est maintenant installée et opérationnelle. Vous pouvez commencer à l’utiliser pour gérer votre parc informatique. Pour plus de détails, consultez la documentation officielle de GLPI.
