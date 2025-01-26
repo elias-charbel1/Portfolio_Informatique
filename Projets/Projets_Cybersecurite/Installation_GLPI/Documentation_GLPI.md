@@ -6,11 +6,10 @@ Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de
 ---
 
 ## Table des Matières
-1. [Objectifs](#objectifs)
-2. [Configuration de la Machine Virtuelle](#1-configuration-de-la-machine-virtuelle)
+1. [Configuration de la Machine Virtuelle](#1-configuration-de-la-machine-virtuelle)
    1. [Outil Utilisé](#outil-utilisé)
    2. [Configuration de la VM](#configuration-de-la-vm)
-3. [Installation et Configuration](#2-installation-et-configuration)
+2. [Installation et Configuration](#2-installation-et-configuration)
    1. [Configuration SSH](#21-configuration-ssh)
    2. [Installation des Dépendances](#22-installation-des-dépendances)
       1. [Apache2](#apache2)
@@ -18,13 +17,14 @@ Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de
       3. [MariaDB](#mariadb)
       4. [Modules PHP supplémentaires](#modules-php-supplémentaires)
    3. [Sécurisation et création de la base de données MariaDB](#23-sécurisation-et-création-de-la-base-de-données-mariadb)
-   4. [Installation de GLPI](#3-installation-de-glpi)
+   4. [Installation de GLPI](#24-installation-de-glpi)
    5. [Configuration via l'interface web](#25-configuration-via-linterface-web)
-4. [Sécurisation](#3-sécurisation)
-5. [Conclusion](#4-conclusion)
+3. [Sécurisation](#3-sécurisation)
+4. [Conclusion](#4-conclusion)
 
+---
 
-### Objectifs
+## Objectifs
 - Créer une machine virtuelle pour héberger GLPI.
 - Installer et configurer les dépendances nécessaires.
 - Installer et sécuriser GLPI via l'interface web.
@@ -33,27 +33,33 @@ Ce projet documente l'installation et la configuration de GLPI (Gestion Libre de
 
 ## 1. Configuration de la Machine Virtuelle
 
-### Outil Utilisé
-- **VirtualBox**
+### 1.1 Outil Utilisé
+- VirtualBox
 
-### Configuration de la VM
+### 1.2 Configuration de la VM
 - **CPU** : 1
 - **RAM** : 2 Go
 - **Stockage** : 20 Go
-- Installation de Debian sans interface graphique.
+- **Système** : Debian 11.6 (sans interface graphique)
 
 ---
 
 ## 2. Installation et Configuration
 
 ### 2.1 Configuration SSH
-- Installation du serveur SSH.
-- Vérification de l'installation.
-- Test de la connexion SSH depuis l'ordinateur hôte.
+- Installer le serveur SSH :
 
 ```bash
-sudo apt install openssh-server -y 
+sudo apt install openssh-server -y
+```
+- Vérifier l'installation :
+  
+```bash
 sudo systemctl status ssh
+```
+Tester la connexion SSH depuis l'hôte :
+
+```bash
 ssh user@adresseIPmachine
 ```
 
