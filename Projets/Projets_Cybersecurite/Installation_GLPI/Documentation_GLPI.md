@@ -1,17 +1,20 @@
-## Sommaire
 1. [Introduction](#introduction)
-2. [Installation et Configuration](#installation-et-configuration)
-   - [2.1 Configuration de la machine virtuelle](#21-configuration-de-la-machine-virtuelle)
-   - [2.2 Installation des dépendances](#22-installation-des-dépendances)
+   - [Objectifs](#objectifs)
+2. [Configuration de la Machine Virtuelle](#1-configuration-de-la-machine-virtuelle)
+   - [Outil Utilisé](#outil-utilisé)
+   - [Configuration de la VM](#configuration-de-la-vm)
+3. [Installation et Configuration](#2-installation-et-configuration)
+   - [2.1 Configuration SSH](#21-configuration-ssh)
+   - [2.2 Installation des Dépendances](#22-installation-des-dépendances)
      - [Apache2](#apache2)
      - [PHP](#php)
      - [MariaDB](#mariadb)
      - [Modules PHP supplémentaires](#modules-php-supplémentaires)
    - [2.3 Sécurisation et création de la base de données MariaDB](#23-sécurisation-et-création-de-la-base-de-données-mariadb)
-3. [Installation de GLPI](#installation-de-glpi)
-4. [Configuration via l'interface web](#configuration-via-linterface-web)
-5. [Sécurisation](#sécurisation)
-6. [Conclusion](#conclusion)
+4. [Installation de GLPI](#3-installation-de-glpi)
+5. [Configuration via l'interface web](#4-configuration-via-linterface-web)
+6. [Sécurisation](#5-sécurisation)
+7. [Conclusion](#6-conclusion)
 
 
 ## Introduction
