@@ -5,9 +5,9 @@ Ce dépôt regroupe mes projets et exercices réalisés dans le cadre de mes for
 ## 📁 Structure du dépôt
 
 - **Projets**
-  - *Configuration réseau avec Packet Tracer* : Mise en réseau de deux LAN via un routeur avec analyse des menaces courantes.
-  - *Serveur DHCP et Active Directory (Windows Server)* : Installation et configuration de rôles (DHCP, ADDS) pour une infrastructure d'entreprise.
-  - *GLPI* : Installation et configuration de GLPI sur une machine virtuelle Debian pour la gestion de parc informatique.
+  - *[Configuration réseau avec Packet Tracer](./Projets/Projet_Reseaux/Connexion_LAN)* : Mise en réseau de deux LAN via un routeur avec analyse des menaces courantes.
+  - *[Serveur DHCP et Active Directory](./Projets/Projet_Administration/Active_Directory)* : Installation et configuration de rôles (DHCP, ADDS) pour une infrastructure d'entreprise.
+  - *[GLPI](./Projets/Projets_Cybersecurite/GLPI)* : Installation et configuration de GLPI sur une machine virtuelle Debian pour la gestion de parc informatique.
   - *Sécurité réseau* : Analyse des menaces et configuration des protections de base.
 
 - **Scripts**
