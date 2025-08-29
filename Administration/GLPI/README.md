@@ -6,6 +6,10 @@
 - Installer GLPI et sécuriser l’accès via l’interface web
 - Documenter l’installation et la configuration
 
+## 💻 Machine virtuelle
+La VM Debian avec GLPI installée est disponible ici :  
+[📦 Télécharger la VM GLPI](https://drive.google.com/file/d/1cIO2tj0m8mb1s43W7cy31wevh-ltm_rQ/view?usp=sharing)
+
 ## 🛠️ Environnement
 - Machine virtuelle : VirtualBox / VMware
 - OS : Debian 11.6 (sans interface graphique)
