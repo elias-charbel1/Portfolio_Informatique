@@ -20,13 +20,13 @@ Chaque projet est documenté dans son propre dossier avec :
   - 📦 La VM Debian avec GLPI installé est disponible en téléchargement (lien dans le README du projet)  
 
 ### 🔹 Réseaux
-- [**Connexion LAN**](./Administration/Reseaux/Connexion_LAN)  
+- [**Connexion LAN**](./Reseaux/Connexion_LAN)  
   - Configuration d’un LAN simple avec Packet Tracer et analyse des menaces courantes  
-  - Topologie : [Topologie_LAN.pkt](./Administration/Reseaux/Connexion_LAN/Topologie_LAN.pkt) | ![Schéma](./Administration/Reseaux/Connexion_LAN/Topologie_LAN.png)  
-- [**Serveur DHCP**](./Administration/Reseaux/Serveur_DHCP)  
+  - Topologie : [Topologie_LAN.pkt](./Reseaux/Connexion_LAN/Topologie_LAN.pkt) | ![Schéma](./Reseaux/Connexion_LAN/Topologie_LAN.png)  
+- [**Serveur DHCP**](./Reseaux/Serveur_DHCP)  
   - Mise en place d’un serveur DHCP avec IP Helper et pools d’adressage  
-  - Topologie : [Topologie_DHCP.pkt](./Administration/Reseaux/Serveur_DHCP/Topologie_DHCP.pkt) | ![Schéma](./Administration/Reseaux/Serveur_DHCP/Topologie_DHCP.png)  
-- [**Menaces Réseau**](./Administration/Reseaux/Menaces_Réseaux.md)  
+  - Topologie : [Topologie_DHCP.pkt](./Reseaux/Serveur_DHCP/Topologie_DHCP.pkt) | ![Schéma](./Administration/Reseaux/Serveur_DHCP/Topologie_DHCP.png)  
+- [**Menaces Réseau**](./Reseaux/Menaces_Réseaux.md)  
   - Étude et documentation des attaques Ping of Death & SYN Flood  
 
 ### 🔹 Scripts
