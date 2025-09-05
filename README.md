@@ -57,4 +57,5 @@ Ce portfolio a pour but de démontrer mes compétences pratiques dans des **scé
 
 ## 📬 Contact
 📧 Email : charbelelias@hotmail.fr  
-🔗 LinkedIn : [Votre profil LinkedIn]  
+🔗 LinkedIn : [Elias Charbel](https://www.linkedin.com/in/eliascharbel1/)
+
