@@ -15,7 +15,7 @@ Chaque projet est documenté dans son propre dossier avec :
 - [**Active Directory – Rue25**](./Administration/Active_Directory/Rue25)  
   - Installation et configuration de Windows Server 2019 (DHCP, ADDS, utilisateurs, groupes, dossiers partagés)  
   - 📷 Captures d’écran disponibles dans le dossier [Screenshots](./Administration/Active_Directory/Rue25/Screenshots)  
-- [**GLPI – Rue25**](./Administration/Active_Directory/Rue25/GLPI)  
+- [**GLPI – Rue25**](./Administration/Active_Directory/GLPI)  
   - Installation et configuration de GLPI sur Debian 11.6  
   - 📦 La VM Debian avec GLPI installé est disponible en téléchargement (lien dans le README du projet)  
 
