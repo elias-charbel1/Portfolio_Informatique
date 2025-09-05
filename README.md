@@ -3,7 +3,7 @@
 Bienvenue sur mon portfolio technique.  
 Ce dépôt regroupe mes projets pratiques en **administration systèmes et réseaux** ainsi que mes **labs en cybersécurité**.  
 Chaque projet est documenté dans son propre dossier avec :  
-- Les fichiers de configuration ou topologies (Packet Tracer, configurations serveurs, etc.)  
+- Les fichiers de configuration (Packet Tracer, configurations serveurs, etc.)  
 - Des captures d’écran ou schémas  
 - Un fichier `README.md` détaillant les objectifs, étapes et résultats  
 
@@ -12,18 +12,28 @@ Chaque projet est documenté dans son propre dossier avec :
 ## 📁 Structure du dépôt
 
 ### 🔹 Administration Systèmes & Réseaux
-- [**Connexion LAN**](./Administration/Connexion_LAN) : configuration d’un LAN avec Packet Tracer et analyse des menaces courantes  
-- [**DHCP LAN**](./Administration/DHCP_LAN) : mise en place d’un serveur DHCP avec IP Helper et pools d’adressage  
-- [**Rue25 – DHCP & Active Directory**](./Administration/Rue25_AD_DHCP) : installation de Windows Server 2019, configuration DHCP, ADDS, utilisateurs, groupes et dossiers partagés  
-- [**Rue25 – GLPI**](./Administration/Rue25_GLPI) : installation et configuration de GLPI sur Debian 11.6  
-  - 📦 La VM Debian avec GLPI installé est disponible en téléchargement (lien dans le README du projet)
+- [**Active Directory – Rue25**](./Administration/Active_Directory/Rue25)  
+  - Installation et configuration de Windows Server 2019 (DHCP, ADDS, utilisateurs, groupes, dossiers partagés)  
+  - 📷 Captures d’écran disponibles dans le dossier [Screenshots](./Administration/Active_Directory/Rue25/Screenshots)  
+- [**GLPI – Rue25**](./Administration/Active_Directory/Rue25/GLPI)  
+  - Installation et configuration de GLPI sur Debian 11.6  
+  - 📦 La VM Debian avec GLPI installé est disponible en téléchargement (lien dans le README du projet)  
 
-### 🔹 Cybersécurité
-- [**Menaces Réseau**](./Cybersecurite/Menaces_Reseaux.md) : étude et documentation des attaques Ping of Death & SYN Flood  
-- **Labs SOC / Sécurité** *(en cours d’ajout)* : analyse de logs, détection d’incidents et simulations de menaces  
+### 🔹 Réseaux
+- [**Connexion LAN**](./Administration/Reseaux/Connexion_LAN)  
+  - Configuration d’un LAN simple avec Packet Tracer et analyse des menaces courantes  
+  - Topologie : [Topologie_LAN.pkt](./Administration/Reseaux/Connexion_LAN/Topologie_LAN.pkt) | ![Schéma](./Administration/Reseaux/Connexion_LAN/Topologie_LAN.png)  
+- [**Serveur DHCP**](./Administration/Reseaux/Serveur_DHCP)  
+  - Mise en place d’un serveur DHCP avec IP Helper et pools d’adressage  
+  - Topologie : [Topologie_DHCP.pkt](./Administration/Reseaux/Serveur_DHCP/Topologie_DHCP.pkt) | ![Schéma](./Administration/Reseaux/Serveur_DHCP/Topologie_DHCP.png)  
+- [**Menaces Réseau**](./Administration/Reseaux/Menaces_Réseaux.md)  
+  - Étude et documentation des attaques Ping of Death & SYN Flood  
 
-### 🔹 Scripts *(optionnel, ajouté uniquement si projets disponibles)*
-- Scripts d’analyse de logs et automatisation réseau *(à venir)*  
+### 🔹 Scripts
+- [**Analyse de Logs**](./Scripts/Analyse_Logs)  
+  - Scripts pour analyser et traiter des journaux système et réseau  
+- [**Automatisation**](./Scripts/Automatisation)  
+  - Scripts d’automatisation *(à venir)*  
 
 ---
 
@@ -48,4 +58,3 @@ Ce portfolio a pour but de démontrer mes compétences pratiques dans des **scé
 ## 📬 Contact
 📧 Email : charbelelias@hotmail.fr  
 🔗 LinkedIn : [Votre profil LinkedIn]  
-
