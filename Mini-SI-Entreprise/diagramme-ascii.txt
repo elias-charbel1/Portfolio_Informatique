@@ -1,0 +1,22 @@
+
+
+          Internet
+             │	
+        VirtualBox NAT
+             │	
+    pfSense (FW/Router/NAT)
+  WAN [NAT]     LAN-Users          Lan Servers            MGMT
+               192.168.10.0/24   192.168.20.0/24    192.168.99.0/24
+                    GW .1            GW .1               GW .1
+                  
+                     ▲                 ▲                   ▲
+    Host .254 ───────┘             Host .254   ─────   Host .254
+    (Host-Only)
+
+Users: CLI-W10 (DHCP 192.168.10.100-199 via relay → SRV-ADDS )
+Servers: SRV-ADDS 192.168.20.10 (AD/DNS/DHCP) | SRV-LNX 192.168.20.20 (GLPI)
+MGMT: MON 192.168.99.50 (Centreon/Zabbix, optionnel)
+
+DNS chemin: Clients → 192.168.20.10 → (redirecteurs 1.1.1.1 / 9.9.9.9)
+
+
