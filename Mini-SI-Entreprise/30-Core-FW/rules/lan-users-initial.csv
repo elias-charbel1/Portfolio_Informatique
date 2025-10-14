@@ -1,0 +1,12 @@
+Iface,Source,Destination,Protocol,Ports,Action,Comment
+LAN (MGMT),NET_MGMT,This Firewall,TCP,443,Pass,Accès GUI pfSense (HTTPS)
+LAN (MGMT),NET_MGMT,This Firewall,ICMP,-,Pass,Ping pfSense
+LAN (MGMT),NET_MGMT,any,any,any,Pass,Accès complet admin (temporaire)
+
+OPT1 (USERS),NET_USERS,SRV_DNS,TCP/UDP,53,Pass,DNS vers serveur AD
+OPT1 (USERS),NET_USERS,This Firewall,UDP,67-68,Pass,DHCP Relay vers AD
+OPT1 (USERS),NET_USERS,any,TCP,80,443,Pass,Accès web temporaire (test)
+
+# Règles par défaut désactivées :
+# Default allow LAN to any -> Disabled
+# Default allow USERS subnets to any -> Disabled
